@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   var _gasCtrl = new MoneyMaskedTextController();
+  var _alcCtrl = new MoneyMaskedTextController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +33,10 @@ class HomePage extends StatelessWidget {
           Input(
             ctrl: _gasCtrl,
             label: "Gasolina",
+          ),
+          Input(
+            ctrl: _alcCtrl,
+            label: "Álcool",
           )
         ],
       ),
